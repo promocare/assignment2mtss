@@ -131,6 +131,51 @@ public class IntegerToRomanTest
         assertEquals("X",result);
     }
 
+    /**
+     * Test the number 11
+     */
+    @Test 
+    public void testNumberElevenConversion()
+    {
+        String result = IntegerToRoman.convert(11);
+
+        assertEquals("XI",result);
+    }
+
+    /**
+     * Test the number 14
+     */
+    @Test
+    public void testNumberFourteenConversion()
+    {
+        String result = IntegerToRoman.convert(14);
+
+        assertEquals("XIV",result);
+    }
+
+    /**
+     * Test the number 16
+     */
+    @Test
+    public void testNumberSixteenConversion()
+    {
+        String result = IntegerToRoman.convert(16);
+
+        assertEquals("XVI",result);
+    }
+
+    /*
+     * Test the number 19
+     */
+    @Test
+    public void testNumberNineteenConversion()
+    {
+        String result = IntegerToRoman.convert(19);
+
+        assertEquals("XIX",result);
+    }
+
+
     
 }
 
