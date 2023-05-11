@@ -11,6 +11,15 @@ public class IntegerToRoman {
         
         String romanNumeral = "";
 
+        while (number >= 50) {
+            romanNumeral += "L";
+            number -= 50;
+        }
+        while (number >= 40) {
+            romanNumeral += "XL";
+            number -= 40;
+        }
+
         while (number >= 10) {
             romanNumeral += "X";
             number -= 10;
@@ -24,7 +33,7 @@ public class IntegerToRoman {
             romanNumeral += "V";
             number -= 5;
         }
-        
+
         while (number >= 4) {
             romanNumeral += "IV";
             number -= 4;

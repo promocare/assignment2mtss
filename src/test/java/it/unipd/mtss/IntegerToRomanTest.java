@@ -131,6 +131,7 @@ public class IntegerToRomanTest
         assertEquals("X",result);
     }
 
+    //------- Test from 11 to 20 -------
     /**
      * Test the number 11
      */
@@ -177,6 +178,54 @@ public class IntegerToRomanTest
 
 
     
+    //------- Test from 21 to 50 -------
+    /**
+     * Test the number 21
+     */
+    @Test
+    public void testNumber21Conversion()
+    {
+
+        String result = IntegerToRoman.convert(21);
+
+        assertEquals("XXI",result);
+    }
+
+    /**
+     * Test the number 40
+     */
+    @Test
+    public void testNumber40Conversion()
+    {
+
+        String result = IntegerToRoman.convert(40);
+
+        assertEquals("XL",result);
+    }
+
+    /**
+     * Test the number 45
+     */
+    @Test
+    public void testNumber45Conversion()
+    {
+
+        String result = IntegerToRoman.convert(45);
+
+        assertEquals("XLV",result);
+    }
+
+    /**
+     * Test the number 50
+     */
+    @Test
+    public void testNumber50Conversion()
+    {
+
+        String result = IntegerToRoman.convert(50);
+
+        assertEquals("L",result);
+    }
 }
 
 
