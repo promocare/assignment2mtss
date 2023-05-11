@@ -183,7 +183,7 @@ public class IntegerToRomanTest
      * Test the number 21
      */
     @Test
-    public void testNumber21Conversion()
+    public void testNumberTwentyOneConversion()
     {
 
         String result = IntegerToRoman.convert(21);
@@ -195,7 +195,7 @@ public class IntegerToRomanTest
      * Test the number 40
      */
     @Test
-    public void testNumber40Conversion()
+    public void testNumberFortyConversion()
     {
 
         String result = IntegerToRoman.convert(40);
@@ -207,7 +207,7 @@ public class IntegerToRomanTest
      * Test the number 45
      */
     @Test
-    public void testNumber45Conversion()
+    public void testNumberFortyFiveConversion()
     {
 
         String result = IntegerToRoman.convert(45);
@@ -219,13 +219,65 @@ public class IntegerToRomanTest
      * Test the number 50
      */
     @Test
-    public void testNumber50Conversion()
+    public void testNumberFiftyConversion()
     {
 
         String result = IntegerToRoman.convert(50);
 
         assertEquals("L",result);
     }
+
+
+     //------- Test from 100 to 500 -------
+    /**
+     * Test the number 100
+     */
+    @Test
+    public void testNumberOneHundredConversion()
+    {
+
+        String result = IntegerToRoman.convert(100);
+
+        assertEquals("C",result);
+    }
+
+    /**
+     * Test the number 400
+     */
+    @Test
+    public void testNumberFourHundredConversion()
+    {
+
+        String result = IntegerToRoman.convert(400);
+
+        assertEquals("CD",result);
+    }
+
+    /**
+     * Test the number 444
+     */
+    @Test
+    public void testNumberFourHundredFortyFourConversion()
+    {
+
+        String result = IntegerToRoman.convert(444);
+
+        assertEquals("CDXLIV",result);
+    }
+
+    /**
+     * Test the number 500
+     */
+    @Test
+    public void testNumberFiveHundrerConversion()
+    {
+
+        String result = IntegerToRoman.convert(500);
+
+        assertEquals("D",result);
+    }
+
+
 }
 
 

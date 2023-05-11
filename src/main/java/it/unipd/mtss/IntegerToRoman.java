@@ -11,6 +11,21 @@ public class IntegerToRoman {
         
         String romanNumeral = "";
 
+        while (number >= 500) {
+            romanNumeral += "D";
+            number -= 500;
+        }
+
+        while (number >= 400) {
+            romanNumeral += "CD";
+            number -= 400;
+        }
+
+        while (number >= 100) {
+            romanNumeral += "C";
+            number -= 100;
+        }
+
         while (number >= 50) {
             romanNumeral += "L";
             number -= 50;
