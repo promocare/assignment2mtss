@@ -1,0 +1,2 @@
+![build](https://github.com/promocare/assignment2mtss/actions/workflows/build.yml/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/promocare/assignment2mtss/badge.svg?branch=main)](https://coveralls.io/github/promocare/assignment2mtss?branch=main)
