@@ -11,6 +11,14 @@ public class IntegerToRoman {
         
         String romanNumeral = "";
 
+        if(number <= 0){
+            throw new IllegalArgumentException("Input should be positive and greater than zero");
+        }
+
+        if(number > 1000){
+            throw new IllegalArgumentException("Input should less or equal to 1000");
+        }
+
         while (number >= 500) {
             romanNumeral += "D";
             number -= 500;

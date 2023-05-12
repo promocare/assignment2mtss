@@ -278,6 +278,65 @@ public class IntegerToRomanTest
     }
 
 
+    //------- Test for edge cases -------
+    /**
+     * Test the number 0
+     */
+    @Test(expected = IllegalArgumentException.class)
+    public void testNumberZeroError()
+    {
+
+        IntegerToRoman.convert(0);
+
+    }
+
+    /**
+     * Test negative numbers
+     */
+    @Test(expected = IllegalArgumentException.class)
+    public void testNegativeNumbersError()
+    {
+
+        IntegerToRoman.convert(-2);
+
+    }
+
+    
+    /**
+     * Test positive exponentials
+     */
+    @Test
+    public void testPositiveExponentialsError()
+    {
+
+        String result = IntegerToRoman.convert( (int)Math.pow(2, 3) );
+
+        assertEquals("VIII",result);
+
+    }
+
+    /**
+     * Test negative exponentials
+     */
+    @Test(expected = IllegalArgumentException.class)
+    public void testNegativeExponentialsError()
+    {
+
+        IntegerToRoman.convert( (int)Math.pow(-2, 3) );
+
+    }
+
+    /**
+     * Test number greater than 1000 
+     */
+    @Test(expected = IllegalArgumentException.class)
+    public void testNumberGreaterThanOneThousandError()
+    {
+
+        IntegerToRoman.convert(1200);
+
+    }
+
 }
 
 
