@@ -19,6 +19,16 @@ public class IntegerToRoman {
             throw new IllegalArgumentException("Input should less or equal to 1000");
         }
 
+        while (number == 1000) {
+            romanNumeral += "M";
+            number -= 1000;        
+        }
+        
+        while (number >= 900) {
+            romanNumeral += "CM";
+            number -= 900;
+        }
+
         while (number >= 500) {
             romanNumeral += "D";
             number -= 500;
@@ -32,6 +42,11 @@ public class IntegerToRoman {
         while (number >= 100) {
             romanNumeral += "C";
             number -= 100;
+        }
+
+        while (number >= 90) {
+            romanNumeral += "XC";
+            number -= 90;
         }
 
         while (number >= 50) {

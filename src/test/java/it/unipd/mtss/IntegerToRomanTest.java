@@ -277,6 +277,55 @@ public class IntegerToRomanTest
         assertEquals("D",result);
     }
 
+    //------- Test from 501 to 1000 -------
+    /*
+     * Test the number 600
+    */
+    @Test
+    public void testNumberSixHundredConversion()
+    {
+
+        String result = IntegerToRoman.convert(600);
+
+        assertEquals("DC",result);
+    }
+
+    /*
+     * Test the number 799
+     */
+    @Test
+    public void testNumberSevenHundredNinetyNineConversion()
+    {
+
+        String result = IntegerToRoman.convert(799);
+
+        assertEquals("DCCXCIX",result);
+    }
+
+    /*
+    * Test the number 999
+    */
+    @Test
+    public void testNumberNineHundredNinetyNineConversion()
+    {
+
+        String result = IntegerToRoman.convert(999);
+
+        assertEquals("CMXCIX",result);
+    }
+
+    /*
+     * Test the number 1000
+     */
+    @Test 
+    public void testNumberOneThousandConversion()
+    {
+
+        String result = IntegerToRoman.convert(1000);
+
+        assertEquals("M",result);
+    }
+
 
     //------- Test for edge cases -------
     /**
