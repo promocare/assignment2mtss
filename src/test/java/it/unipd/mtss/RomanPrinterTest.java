@@ -96,7 +96,35 @@ public class RomanPrinterTest {
         assertEquals(" __   __  _____ \n \\ \\ / / / ____|\n  \\ V / | |     \n   > <  | |     \n  / . \\ | |____ \n /_/ \\_\\ \\_____|\n",result);
     }
 
+    /*
+     * Test number 123
+     */
+    @Test
+    public void testNumberOneHundredTwentyThreePrint(){
+        String result = RomanPrinter.print(123);
+        
+        assertEquals("  _____  __   __ __   __ _____  _____  _____ \n / ____| \\ \\ / / \\ \\ / /|_   _||_   _||_   _|\n| |       \\ V /   \\ V /   | |    | |    | |  \n| |        > <     > <    | |    | |    | |  \n| |____   / . \\   / . \\  _| |_  _| |_  _| |_ \n \\_____| /_/ \\_\\ /_/ \\_\\|_____||_____||_____|\n",result);
+    }
 
+    /*
+     * Test the number 400
+     */
+    @Test
+    public void testNumberFourHundredPrint(){
+        String result = RomanPrinter.print(400);
+        
+        assertEquals("  _____  _____  \n / ____||  __ \\ \n| |     | |  | |\n| |     | |  | |\n| |____ | |__| |\n \\_____||_____/ \n",result);
+    }
+
+    /*
+     * Test the number 699
+     */
+    @Test
+    public void testNumberSixHundredNinetyNinePrint(){
+        String result = RomanPrinter.print(699);
+        
+        assertEquals(" _____    _____  __   __  _____  _____  __   __\n|  __ \\  / ____| \\ \\ / / / ____||_   _| \\ \\ / /\n| |  | || |       \\ V / | |       | |    \\ V / \n| |  | || |        > <  | |       | |     > <  \n| |__| || |____   / . \\ | |____  _| |_   / . \\ \n|_____/  \\_____| /_/ \\_\\ \\_____||_____| /_/ \\_\\\n",result);
+    }
 
     
 }
