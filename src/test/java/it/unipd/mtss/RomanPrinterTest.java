@@ -126,5 +126,34 @@ public class RomanPrinterTest {
         assertEquals(" _____    _____  __   __  _____  _____  __   __\n|  __ \\  / ____| \\ \\ / / / ____||_   _| \\ \\ / /\n| |  | || |       \\ V / | |       | |    \\ V / \n| |  | || |        > <  | |       | |     > <  \n| |__| || |____   / . \\ | |____  _| |_   / . \\ \n|_____/  \\_____| /_/ \\_\\ \\_____||_____| /_/ \\_\\\n",result);
     }
 
+    /*
+     * Test the number 919
+     */
+    @Test
+    public void testNumberNineHundredNineteenPrint(){
+        String result = RomanPrinter.print(919);
+        
+        assertEquals("  _____  __  __  __   __ _____  __   __\n / ____||  \\/  | \\ \\ / /|_   _| \\ \\ / /\n| |     | \\  / |  \\ V /   | |    \\ V / \n| |     | |\\/| |   > <    | |     > <  \n| |____ | |  | |  / . \\  _| |_   / . \\ \n \\_____||_|  |_| /_/ \\_\\|_____| /_/ \\_\\\n",result);
+    }
+
+    /*
+     * Test the number 999
+     */
+    @Test
+    public void testNumberNineHundredNinetyNinePrint(){
+        String result = RomanPrinter.print(999);
+        
+        assertEquals("  _____  __  __  __   __  _____  _____  __   __\n / ____||  \\/  | \\ \\ / / / ____||_   _| \\ \\ / /\n| |     | \\  / |  \\ V / | |       | |    \\ V / \n| |     | |\\/| |   > <  | |       | |     > <  \n| |____ | |  | |  / . \\ | |____  _| |_   / . \\ \n \\_____||_|  |_| /_/ \\_\\ \\_____||_____| /_/ \\_\\\n",result);
+    }
+
+    /*
+     * Test the number 1000
+     */
+    @Test
+    public void testNumberOneThousandPrint(){
+        String result = RomanPrinter.print(1000);
+        
+        assertEquals(" __  __ \n|  \\/  |\n| \\  / |\n| |\\/| |\n| |  | |\n|_|  |_|\n",result);
+    }
     
 }
