@@ -6,14 +6,36 @@
 package it.unipd.mtss;
 
 public class RomanPrinter {
+
    
     public static String print(int num){
+
         return printAsciiArt(IntegerToRoman.convert(num));
     }
-    
+
+    static final String[] letterI = {
+        " _____ ",
+        "|_   _|",
+        "  | |  ",
+        "  | |  ",
+        " _| |_ ",
+        "|_____|"
+    };
+
+
     private static String printAsciiArt(String romanNumber){
-        //TODO
-        return null;
+        String output = "";
+        for(int i = 0; i < 6; i++){
+            for(int j = 0; j < romanNumber.length(); j++){
+                switch(romanNumber.charAt(j)){
+                    case 'I':
+                        output += letterI[i];
+                        break;
+                }
+            }
+            output += "\n";
+        }
+        return output;
     }
-    
+
 }
