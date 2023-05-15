@@ -76,5 +76,27 @@ public class RomanPrinterTest {
         assertEquals(" __   __  _       _____ \n \\ \\ / / | |     |_   _|\n  \\ V /  | |       | |  \n   > <   | |       | |  \n  / . \\  | |____  _| |_ \n /_/ \\_\\ |______||_____|\n",result);
     }
 
+    /*
+     * Test the number 49
+     */
+    @Test
+    public void testNumberFortyNinePrint(){
+        String result = RomanPrinter.print(49);
+        
+        assertEquals(" __   __  _       _____  __   __\n \\ \\ / / | |     |_   _| \\ \\ / /\n  \\ V /  | |       | |    \\ V / \n   > <   | |       | |     > <  \n  / . \\  | |____  _| |_   / . \\ \n /_/ \\_\\ |______||_____| /_/ \\_\\\n",result);
+    }
+
+    /*
+     * Test the number 90
+     */
+    @Test
+    public void testNumberNinetyPrint(){
+        String result = RomanPrinter.print(90);
+        
+        assertEquals(" __   __  _____ \n \\ \\ / / / ____|\n  \\ V / | |     \n   > <  | |     \n  / . \\ | |____ \n /_/ \\_\\ \\_____|\n",result);
+    }
+
+
+
     
 }

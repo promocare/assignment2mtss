@@ -49,6 +49,15 @@ public class RomanPrinter {
         " |______|"
     };
 
+    static final String[] letterC = {
+        "  _____ ",
+        " / ____|",
+        "| |     ",
+        "| |     ",
+        "| |____ ",
+        " \\_____|"
+    };
+
     private static String printAsciiArt(String romanNumber){
         String output = "";
         for(int i = 0; i < 6; i++){
@@ -68,6 +77,9 @@ public class RomanPrinter {
                     
                     case 'L':
                         output += letterL[i];
+                        break;
+                    case 'C':
+                        output += letterC[i];
                         break;
                 }
             }
