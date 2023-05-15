@@ -55,4 +55,26 @@ public class RomanPrinterTest {
         
         assertEquals(" __   __ _____  __      __\n \\ \\ / /|_   _| \\ \\    / /\n  \\ V /   | |    \\ \\  / / \n   > <    | |     \\ \\/ /  \n  / . \\  _| |_     \\  /   \n /_/ \\_\\|_____|     \\/    \n",result);
     }
+
+    /*
+     * Test the letter L
+     */
+    @Test
+    public void testLetterL(){
+        String result = RomanPrinter.print(50);
+        
+        assertEquals("  _      \n | |     \n | |     \n | |     \n | |____ \n |______|\n",result);
+    }
+
+    /*
+     * Test the number 41
+     */
+    @Test
+    public void testNumberFortyOnePrint(){
+        String result = RomanPrinter.print(41);
+        
+        assertEquals(" __   __  _       _____ \n \\ \\ / / | |     |_   _|\n  \\ V /  | |       | |  \n   > <   | |       | |  \n  / . \\  | |____  _| |_ \n /_/ \\_\\ |______||_____|\n",result);
+    }
+
+    
 }
