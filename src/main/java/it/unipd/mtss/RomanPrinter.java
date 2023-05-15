@@ -22,6 +22,14 @@ public class RomanPrinter {
         "|_____|"
     };
 
+    static final String[] letterV = {
+        " __      __",
+        " \\ \\    / /",
+        "  \\ \\  / / ",
+        "   \\ \\/ /  ",
+        "    \\  /   ",
+        "     \\/    "
+    };
 
     private static String printAsciiArt(String romanNumber){
         String output = "";
@@ -30,6 +38,10 @@ public class RomanPrinter {
                 switch(romanNumber.charAt(j)){
                     case 'I':
                         output += letterI[i];
+                        break;
+
+                    case 'V':
+                        output += letterV[i];
                         break;
                 }
             }
