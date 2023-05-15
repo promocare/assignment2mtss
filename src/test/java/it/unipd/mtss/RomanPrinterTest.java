@@ -155,5 +155,29 @@ public class RomanPrinterTest {
         
         assertEquals(" __  __ \n|  \\/  |\n| \\  / |\n| |\\/| |\n| |  | |\n|_|  |_|\n",result);
     }
+
+
+    /*
+     * Test negative number
+     */
+    @Test(expected = IllegalArgumentException.class)
+    public void testNegativeNumbersPrint(){       
+        RomanPrinter.print(-5);
+    }
     
+    /*
+     * Test number zero
+     */
+    @Test(expected = IllegalArgumentException.class)
+    public void testNumberZeroPrint(){
+        RomanPrinter.print(0);
+    }
+
+    /*
+     * Test number greater than 1000 
+     */
+    @Test(expected = IllegalArgumentException.class)
+    public void testNumberGreaterThanOneThousandPrint(){
+        RomanPrinter.print(1001);
+    }
 }
