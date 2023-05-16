@@ -6,6 +6,13 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class RomanPrinterTest {
+
+    @Test
+    public void testClassContructor(){
+        RomanPrinter romanPrinter = new RomanPrinter();
+    }
+
+
     /*
      * Test the letter I 
      */

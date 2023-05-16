@@ -10,6 +10,13 @@ import org.junit.Test;
  */
 public class IntegerToRomanTest 
 {
+
+   
+    @Test
+    public void testClassContructor(){
+        IntegerToRoman integerToRoman = new IntegerToRoman();
+    }
+
     /**
      * Test the number 1
      */
